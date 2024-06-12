@@ -1,9 +1,12 @@
-import Image from "next/image";
+"use client"
+import { Button } from "@mui/base";
+import { Container } from "@mui/system";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+		<Container maxWidth="sm" className="flex min-h-screen flex-col items-center justify-between py-24" component="main">
+    {/* <main className="flex min-h-screen flex-col items-center justify-between p-24"> */}
+      {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.tsx</code>
@@ -107,7 +110,25 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-    </main>
+      </div> */}
+			<Button
+				className="
+					relative bg-[#1f883d]
+					font-sans text-sm leading-5 font-medium
+					px-4 py-[5px] ml-4
+					text-white text-center
+					rounded-md border-[#f0f6fc]/[.1]
+					shadow-[0_0_transparent_,_0_0_transparent]
+					hover:duration-[80ms] active:transition-none
+					[&:not(:disabled)]:hover:bg-[#2c974b]
+					[&:not(:disabled)]:active:bg-[#298e46]
+					[&:not(:disabled)]:active:shadow-[inset_0_-1x_0_rgba(0,45,17,0.2)]
+					disabled:cursor-not-allowed disabled:shadow-none
+					disabled:text-[rgba(255,255,255,0.8)] disabled:bg-[#94d3a2]
+				"
+			>
+        Button
+      </Button>
+		</Container>
   );
 }
