@@ -129,6 +129,26 @@ export default function Home() {
 			>
         Button
       </Button>
+			<div className="relative w-full">
+				<div
+					id="scroller"
+					className="
+						absolute bottom-0 left-0 right-0
+						overflow-y-hidden overflow-x-scroll
+						bg-neutral-300/50 rounded-md mx-auto
+					"
+					style={{ width: "315px", height: "315px" }}
+				>
+					<div className="w-fit h-fit flex gap-2">
+						<div className="snap m-2 bg-red-400 rounded-md" style={{ width: "300px", height: "300px" }}></div>
+						<div className="snap m-2 bg-orange-400 rounded-md" style={{ width: "300px", height: "300px" }}></div>
+						<div className="snap m-2 bg-amber-400 rounded-md" style={{ width: "300px", height: "300px" }}></div>
+						<div className="snap m-2 bg-green-400 rounded-md" style={{ width: "300px", height: "300px" }}></div>
+						<div className="snap m-2 bg-blue-400 rounded-md" style={{ width: "300px", height: "300px" }}></div>
+						<div className="snap m-2 bg-purple-400 rounded-md" style={{ width: "300px", height: "300px" }}></div>
+					</div>
+				</div>
+			</div>
 		</Container>
   );
 }
